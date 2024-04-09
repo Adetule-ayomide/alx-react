@@ -1,0 +1,32 @@
+.App {
+  font-size: 1.3rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(230, 62, 62);
+}
+
+.App hr{
+  border: 2px solid rgb(230, 62, 62);
+}
+.App-body {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.App-body form{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.App-footer{
+  text-align: center;
+}
