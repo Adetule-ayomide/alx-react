@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/https://github.com/Adetule-ayomide/alx-react.git/static/css/main.88f021d9.css",
-    "main.js": "/https://github.com/Adetule-ayomide/alx-react.git/static/js/main.d979ca43.js",
-    "static/js/453.59b8a61b.chunk.js": "/https://github.com/Adetule-ayomide/alx-react.git/static/js/453.59b8a61b.chunk.js",
-    "static/media/Holberton_logo.jpg": "/https://github.com/Adetule-ayomide/alx-react.git/static/media/Holberton_logo.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/https://github.com/Adetule-ayomide/alx-react.git/index.html",
-    "main.88f021d9.css.map": "/https://github.com/Adetule-ayomide/alx-react.git/static/css/main.88f021d9.css.map",
-    "main.d979ca43.js.map": "/https://github.com/Adetule-ayomide/alx-react.git/static/js/main.d979ca43.js.map",
-    "453.59b8a61b.chunk.js.map": "/https://github.com/Adetule-ayomide/alx-react.git/static/js/453.59b8a61b.chunk.js.map"
+    "main.css": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/css/main.88f021d9.css",
+    "main.js": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/js/main.f646a5e0.js",
+    "static/js/453.59b8a61b.chunk.js": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/js/453.59b8a61b.chunk.js",
+    "static/media/Holberton_logo.jpg": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/media/Holberton_logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/index.html",
+    "main.88f021d9.css.map": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/css/main.88f021d9.css.map",
+    "main.f646a5e0.js.map": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/js/main.f646a5e0.js.map",
+    "453.59b8a61b.chunk.js.map": "/https://github.com/Adetule-ayomide/alx-react.git/0x01-react_intro/task_3/static/js/453.59b8a61b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88f021d9.css",
-    "static/js/main.d979ca43.js"
+    "static/js/main.f646a5e0.js"
   ]
 }
