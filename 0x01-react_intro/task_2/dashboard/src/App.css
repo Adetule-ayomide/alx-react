@@ -22,6 +22,11 @@
   padding: 2rem;
 }
 
+.App-body form{
+  display: flex;
+  gap: 0.5rem;
+}
+
 .App-footer{
   text-align: center;
 }
