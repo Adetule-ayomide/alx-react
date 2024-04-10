@@ -14,8 +14,23 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react"],
+          },
+        },
+      },
+      {
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "inline-source-map", "image-webpack-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "inline-source-map",
+          "image-webpack-loader",
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
