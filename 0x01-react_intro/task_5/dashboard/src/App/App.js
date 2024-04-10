@@ -1,5 +1,5 @@
 import React from "react";
-import { getFullYear, getFooterCopy } from "./utils";
+import { getFullYear, getFooterCopy } from "../utils/utils";
 import logo from "./Holberton_logo.jpg";
 import "./App.css";
 

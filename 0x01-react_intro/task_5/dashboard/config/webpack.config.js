@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    contentBase: "./dist",
+    static: "./dist",
     hot: true,
   },
   devtool: "inline-source-map",
@@ -19,7 +19,9 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-react"],
+            presets: [
+              ["@babel/preset-env", "@babel/preset-react"]
+            ]
           },
         },
       },
