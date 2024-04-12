@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Login from "../Login/Login";
+import PropTypes from "prop-types";
 import CourseList from "../CourseList/CourseList";
 import Notifications from "../Notifications/Notifications";
 import "./App.css";
@@ -35,23 +35,17 @@ const listNotifications = [
 ];
 
 class App extends Component {
-  renderBody() {
-    const { isLoggedIn } = this.props;
-    if (isLoggedIn) {
-      return <CourseList listCourses={listCourses} />;
-    } else {
-      return <Login />;
-    }
-  }
-
   render() {
+    const { isLoggedIn } = this.props;
     return (
       <>
         <Notifications listNotifications={listNotifications} />
         <div className="App">
           <Header />
           <hr />
-          <div className="App-body">{this.renderBody()}</div>
+          <body className="App-body">
+            {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
+          </body>
           <Footer />
           <hr />
         </div>
