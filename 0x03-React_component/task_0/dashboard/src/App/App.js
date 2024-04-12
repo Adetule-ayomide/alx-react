@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Login from "../Login/Login";
-import PropTypes from "prop-types";
 import CourseList from "../CourseList/CourseList";
 import Notifications from "../Notifications/Notifications";
 import "./App.css";
@@ -35,10 +35,6 @@ const listNotifications = [
 ];
 
 class App extends Component {
-  static propTypes = {
-    isLoggedIn: PropTypes.bool.isRequired,
-  };
-
   renderBody() {
     const { isLoggedIn } = this.props;
     if (isLoggedIn) {
@@ -63,5 +59,9 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  isLoggedIn: PropTypes.bool.isRequired,
+};
 
 export default App;
