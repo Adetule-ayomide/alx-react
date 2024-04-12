@@ -34,22 +34,28 @@ const listNotifications = [
   },
 ];
 
-class App {
+class App extends Component {
   static propTypes = {
     isLoggedIn: PropTypes.bool.isRequired,
   };
 
-  render() {
+  renderBody() {
     const { isLoggedIn } = this.props;
+    if (isLoggedIn) {
+      return <CourseList listCourses={listCourses} />;
+    } else {
+      return <Login />;
+    }
+  }
+
+  render() {
     return (
       <>
         <Notifications listNotifications={listNotifications} />
         <div className="App">
           <Header />
           <hr />
-          <body className="App-body">
-            {isLoggedIn ? <CourseList listCourses={listCourses} /> : <Login />}
-          </body>
+          <div className="App-body">{this.renderBody()}</div>
           <Footer />
           <hr />
         </div>
