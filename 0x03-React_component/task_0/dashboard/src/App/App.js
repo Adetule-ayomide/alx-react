@@ -34,7 +34,7 @@ const listNotifications = [
   },
 ];
 
-class App extends Component {
+class App {
   static propTypes = {
     isLoggedIn: PropTypes.bool.isRequired,
   };
