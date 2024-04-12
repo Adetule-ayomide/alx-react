@@ -34,7 +34,7 @@ const listNotifications = [
   },
 ];
 
-class App extends Component {
+export default class App extends Component {
   render() {
     const { isLoggedIn } = this.props;
     return (
@@ -57,5 +57,3 @@ class App extends Component {
 App.propTypes = {
   isLoggedIn: PropTypes.bool,
 };
-
-export default App;
