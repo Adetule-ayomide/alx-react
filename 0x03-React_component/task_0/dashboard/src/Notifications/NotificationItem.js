@@ -11,7 +11,7 @@ export default function NotificationItem({ type = "default", html, value }) {
 }
 NotificationItem.propTypes = {
   type: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   html: PropTypes.shape({
     __html: PropTypes.string,
   }),
