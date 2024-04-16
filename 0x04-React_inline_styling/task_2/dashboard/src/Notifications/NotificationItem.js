@@ -18,8 +18,7 @@ const NotificationItem = React.memo(({ type, value, html, markAsRead }) => {
       data-testid="notification-item"
       onClick={() => markAsRead(value)}
     >
-      {html ? <div dangerouslySetInnerHTML={html}></div> : value}{" "}
-      {/* {type && <span>{type}</span>}{" "} */}
+      {html ? <div dangerouslySetInnerHTML={html}></div> : value}
     </li>
   );
 });
