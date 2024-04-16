@@ -1,6 +1,9 @@
 import React from "react";
 import { shallow } from "enzyme";
 import NotificationItem from "./NotificationItem";
+import { StyleSheetTestUtils } from "aphrodite";
+
+StyleSheetTestUtils.suppressStyleInjection();
 
 describe("NotificationItem Component", () => {
   it("renders without crashing", () => {
@@ -28,4 +31,8 @@ describe("NotificationItem Component", () => {
     wrapper.find("[data-testid='notification-item']").simulate("click");
     expect(markAsReadMock).toHaveBeenCalledWith("test");
   });
+});
+
+afterAll(() => {
+  StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
 });
