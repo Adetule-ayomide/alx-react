@@ -3,15 +3,6 @@ import { StyleSheet, css } from "aphrodite";
 
 
 export default function Login() {
-  const styles = StyleSheet.create({
-    formContainer: {
-      display: "flex",
-      gap: "0.5rem",
-    },
-    label: {
-      marginBottom: "0.5rem",
-    },
-  });
 
   return (
     <>
@@ -32,3 +23,13 @@ export default function Login() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  formContainer: {
+    display: 'flex',
+    gap: '0.5rem'
+  },
+  label: {
+    marginBottom: "0.5rem",
+  },
+});

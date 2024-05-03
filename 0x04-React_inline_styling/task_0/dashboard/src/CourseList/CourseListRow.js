@@ -19,7 +19,7 @@ function CourseListRow({ isHeader = false, textFirstCell, textSecondCell }) {
             <th>{textSecondCell}</th>
           </>
         ) : (
-          <th colSpan="2">{textFirstCell}</th>
+          <th colSpan="2" data-head="heading">{textFirstCell}</th>
         )
       ) : (
         <>

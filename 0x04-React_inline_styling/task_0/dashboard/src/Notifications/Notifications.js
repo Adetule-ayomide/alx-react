@@ -4,6 +4,7 @@ import "./Notifications.css";
 import NotificationItem from "./NotificationItem";
 import closeIcon from "../assets/close-icon.png";
 import NotificationItemShape from "./NotificationItemShape";
+import { getLatestNotification } from "../utilis/utils";
 
 class Notifications extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Notifications extends Component {
   }
 
   render() {
-    const { displayDrawer, listNotifications } = this.props;
+    const { displayDrawer } = this.props;
     return (
       <>
         <div className="menuItem">Your notifications</div>
@@ -37,14 +38,21 @@ class Notifications extends Component {
           </button>
           <p>Here is the list of notifications</p>
           <ul>
-            {listNotifications.map((notification) => (
-              <NotificationItem
-                key={notification.id}
-                type={notification.type}
-                value={notification.value}
-                markAsRead={this.markAsRead}
-              />
-            ))}
+            <NotificationItem
+              type="default"
+              value="New course available"
+              markAsRead={this.markAsRead}
+            />
+            <NotificationItem
+              type="urgent"
+              value="New resume available"
+              markAsRead={this.markAsRead}
+            />
+            <NotificationItem
+              type="urgent"
+              html={{ __html: getLatestNotification() }}
+              markAsRead={this.markAsRead}
+            />
           </ul>
         </div>
       </>

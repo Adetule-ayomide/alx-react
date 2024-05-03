@@ -5,9 +5,9 @@ class NotificationItem extends Component {
   render() {
     const { type, value, html, markAsRead } = this.props;
     return (
-      <li data-testid="notification-item" onClick={() => markAsRead(value)}>
+      <li data-notification-type={type}
+        onClick={() => markAsRead(value)}>
         {html ? <div dangerouslySetInnerHTML={html}></div> : value}
-        {type && <span>{type}</span>}
       </li>
     );
   }

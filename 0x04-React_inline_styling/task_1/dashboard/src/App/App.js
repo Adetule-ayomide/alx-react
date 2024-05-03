@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { StyleSheet, css } from "aphrodite";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Login from "../Login/Login";
@@ -7,7 +8,6 @@ import CourseList from "../CourseList/CourseList";
 import Notifications from "../Notifications/Notifications";
 import BodySectionWithMarginBottom from "../BodySection/BodySectionWithMarginBottom";
 import BodySection from "../BodySection/BodySection";
-import { StyleSheet, css } from "aphrodite";
 
 const listCourses = [
   { id: 1, name: "ES6", credit: 60 },
@@ -58,7 +58,6 @@ class App extends Component {
   }
 
   render() {
-    const { isLoggedIn } = this.props;
     return (
       <>
         <Notifications listNotifications={listNotifications} />
@@ -66,13 +65,13 @@ class App extends Component {
           <Header />
           <hr className={css(styles.hr)} />
           <BodySectionWithMarginBottom title="Course list">
-            {isLoggedIn ? <CourseList listCourses={listCourses} /> : null}
+            <CourseList listCourses={listCourses} />
           </BodySectionWithMarginBottom>
           <BodySectionWithMarginBottom title="Log in to continue">
-            {!isLoggedIn ? <Login /> : null}
+            <Login />
           </BodySectionWithMarginBottom>
           <BodySection title="News from the School">
-            <p>Some random text goes here...</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque sed voluptatibus neque cum eum nesciunt fugit cumque explicabo. Maxime doloremque reiciendis quod hic dignissimos facere fugit accusamus debitis provident</p>
           </BodySection>
           <Footer className={css(styles.footer)} />
           <hr className={css(styles.hr)} />
@@ -87,7 +86,6 @@ App.propTypes = {
   logOut: PropTypes.func,
 };
 
-export default App;
 
 const styles = StyleSheet.create({
   app: {
@@ -102,5 +100,9 @@ const styles = StyleSheet.create({
   },
   footer: {
     textAlign: "center",
+    color: "#fff"
   },
 });
+
+
+export default App;

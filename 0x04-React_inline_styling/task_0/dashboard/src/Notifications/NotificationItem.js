@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 const NotificationItem = React.memo(({ type, value, html, markAsRead }) => {
   return (
-    <li data-testid="notification-item" onClick={() => markAsRead(value)}>
+    <li data-notification-type={type}
+      onClick={() => markAsRead(value)}>
       {html ? <div dangerouslySetInnerHTML={html}></div> : value} {" "}
-      {type && <span>{type}</span>}{" "}
     </li>
   );
 });

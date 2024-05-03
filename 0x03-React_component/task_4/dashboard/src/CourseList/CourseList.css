@@ -10,3 +10,7 @@
   text-align: left;
 }
 
+#CourseList th[data-head="heading"] {
+  text-align: center;
+}
+

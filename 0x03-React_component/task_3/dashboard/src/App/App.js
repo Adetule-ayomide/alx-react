@@ -58,7 +58,6 @@ export default class App extends Component {
   }
 
   render() {
-    const { isLoggedIn } = this.props;
     return (
       <>
         <Notifications listNotifications={listNotifications} />
@@ -66,13 +65,13 @@ export default class App extends Component {
           <Header />
           <hr />
           <BodySectionWithMarginBottom title="Course list">
-            {isLoggedIn ? <CourseList listCourses={listCourses} /> : null}
+            <CourseList listCourses={listCourses} />
           </BodySectionWithMarginBottom>
           <BodySectionWithMarginBottom title="Log in to continue">
-            {!isLoggedIn ? <Login /> : null}
+            <Login />
           </BodySectionWithMarginBottom>
           <BodySection title="News from the School">
-            <p>Some random text goes here...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cumque, reiciendis, culpa expedita quibusdam ea, facere mollitia ab ratione aspernatur maxime similique id optio. Temporibus sequi laborum voluptatem mollitia corrupti.</p>
           </BodySection>
           <Footer />
           <hr />
